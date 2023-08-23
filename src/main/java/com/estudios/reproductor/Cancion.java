@@ -45,7 +45,8 @@ public class Cancion {
     }
 
     public String getNombre() {
-        return nombre;
+       System.out.println(nombre);
+       return nombre;        
     }
 
     public String getArtista() {
