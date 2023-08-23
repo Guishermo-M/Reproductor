@@ -8,7 +8,10 @@ package com.estudios.reproductor;
  *
  * @author PaEstudiar
  */
+import java.util.Scanner;
+
 public class Cancion {
+    Scanner scanner = new Scanner(System.in);
     private String nombre;
     private String artista;
     private int duracion;
@@ -24,6 +27,21 @@ public class Cancion {
     }
 
     public Cancion() {
+//        System.out.println("nombre:");
+//        String nombre = scanner.nextLine();
+//        System.out.println("artista:");
+//        String artista = scanner.nextLine();
+//        System.out.println("duracion en segundos:");
+//        int duracion = scanner.nextInt();
+//        System.out.println("es Favorita?:");
+//        Boolean esFavorita = scanner.nextBoolean();
+//        System.out.println("es Descargada?:");
+//        Boolean esDescargada = scanner.nextBoolean();
+//        this.nombre = nombre;
+//        this.artista = artista;
+//        this.duracion = duracion;
+//        this.esFavorita = esFavorita;
+//        this.esDescargada = esDescargada;
     }
 
     public String getNombre() {
@@ -66,7 +84,11 @@ public class Cancion {
         this.esDescargada = esDescargada;
     }
     
-    public void adelantarCancion(int duracion, int segActual, int segAdelantado) {
+    public void adelantarCancion() {
+        this.duracion = duracion;
+        int segActual = scanner.nextInt();
+        int segAdelantado = scanner.nextInt();
+        
     if (segActual < duracion && segActual + segAdelantado < duracion && segAdelantado < duracion) {
         int minutosAdelantados = segAdelantado / 60;
         int segundosAdelantados = segAdelantado % 60;
@@ -91,7 +113,7 @@ public class Cancion {
 
     @Override
     public String toString() {
-        return "Cancion{" + "nombre=" + nombre + ", artista=" + artista + ", duracion=" + (duracion/60) + "m" + (duracion%60) + "s" + '}';
+        return "\nCancion:\n" + "Nombre: " + nombre + "\nArtista: " + artista + "\nDuracion:" + (duracion/60) + "m" + (duracion%60) + "s";
     }
     
     
