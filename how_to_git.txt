@@ -1,0 +1,36 @@
+ls
+git config --global 
+git config --global user.name 
+git config --global user.email wtf_156@hotmail.com
+git commit
+[200~git remote add origin https://github.com/Guishermo-M/Reproductor.git
+git branch -M main
+git remote add origin https://github.com/Guishermo-M/Reproductor.git
+pwd
+cd /c/Users/PaEstudiar/Documents/NetBeansProjects
+ls
+cd Reproductor/
+ls -rlt
+git statugs
+git status
+git remote -v
+git branch -a
+git push -u origin master
+git push -u origin main
+vi hola.java
+ls -rlt
+git status
+ls
+git status
+git diff  src/main/java/com/estudios/reproductor/Cancion.java
+ls- rlt
+ls -rlt
+git status
+git add hola.java
+git status
+git commit -m "agregue hola.java y modiqué el return de cancion.nombre"
+git status
+git add src/main/java/com/estudios/reproductor/Cancion.java
+git commit -m "modifique cancion.java"
+git push -u origin main
+history -w how_to_git.txt

@@ -86,7 +86,6 @@ public class Cancion {
     }
     
     public void adelantarCancion() {
-        this.duracion = duracion;
         int segActual = scanner.nextInt();
         int segAdelantado = scanner.nextInt();
         
